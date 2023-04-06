@@ -1,5 +1,5 @@
 const scroll = new SmoothScroll('.main-nav a[href*="#"]', {
-    speed: 2000,
+    speed: 1000,
     offset: 100
         // header: '.main-nav'
 });

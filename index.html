@@ -143,21 +143,18 @@
         <!-- Contact -->
         <section id="contact ">
             <h1><span>Contact Me</span></h1>
-            <div class="wrapper ">
+            <div class="flex-wrapper">
                 <div class="info-box ">
                     <p>If you're interested in my services please fill out the available form with required contact information and project details.</p>
                     <p>Thank you.</p>
                 </div>
-                <div class="form-box ">
+                <div class="form-container">
                     <form id="contact-form " method="POST ">
-                        <label for="name ">Name:</label>
-                        <input type="text " id="name " name="name " placeholder="First & Last Name ">
-                        <label for="name ">Email Address:</label>
-                        <input type="email " id="email " name="email " placeholder="abc@example.com ">
-                        <label for="name ">Phone Number:</label>
-                        <input type="text " id="phone " name="phone " placeholder="(111)-11-1111 ">
-                        <label for="message ">Message:</label>
-                        <textarea id="message " name="message " rows="10 " columns="30 " placeholder="Message... "></textarea>
+                        <input type="text " id="first-name " name="first-name " placeholder="First Name">
+                        <input type="text " id="last-name " name="last-name " placeholder="Last Name">
+                        <input type="email " id="email " name="email " placeholder="abc@example.com">
+                        <input type="text " id="phone" name="phone" placeholder="(111)-11-1111">
+                        <textarea id="message " name="message " rows="10 " columns="30 " placeholder="Type your message here..."></textarea>
                         <input type="submit " value="Send Email " class="submit btn ">
                     </form>
                 </div>
