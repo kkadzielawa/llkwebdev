@@ -314,18 +314,28 @@ h1 span {
     text-align: center;
 }
 
+@media (max-width:768px) {
+    #about-me .wrapper {
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
 
 /* PROJECTS  */
 
 .projects .wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 5px;
 }
 
 .projects .wrapper>* {
     width: 100%;
-    height: 300px;
+    height: 384px;
 }
 
 .projects .wrapper div:nth-child(odd) {
@@ -336,18 +346,24 @@ h1 span {
     background: blue;
 }
 
+@media screen and (max-width: 768px) {
+    .projects .wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 /* COURSES  */
 
 .courses .wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 5px;
 }
 
 .courses .wrapper>* {
     width: 100%;
-    height: 300px;
+    height: 384px;
 }
 
 .courses .wrapper div:nth-child(odd) {
@@ -357,6 +373,15 @@ h1 span {
 .courses .wrapper div:nth-child(even) {
     background: blue;
 }
+
+@media screen and (max-width: 768px) {
+    .courses .wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* SERVICES */
 
 
 /* CONTACT FORM */
